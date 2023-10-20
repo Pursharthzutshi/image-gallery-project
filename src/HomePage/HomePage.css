@@ -1,0 +1,39 @@
+
+:root{
+    --bg-color:white;
+    --text-color:black;
+    --home-page-bg-color:white;
+    --user-profile-content-box-bg-color:white;
+    --user-profile-content-box-border-color:whitesmoke;
+    --toggle-button-border-color:white;
+    --toggle-button-bg-color:rgb(115, 115, 115);
+    --toggle-button-inner-circle-bg-color:white;
+
+}
+
+[toggle-theme = "dark"]{
+    --bg-color:black;
+    --text-color:white;
+    --home-page-bg-color:rgb(31, 31, 31);
+    --user-profile-content-box-bg-color:black;
+    --user-profile-content-box-border-color:black;
+    --toggle-button-border-color:white;
+    --toggle-button-bg-color:white;
+    --toggle-button-inner-circle-bg-color:rgb(115, 115, 115);
+
+}
+
+
+.home-page{
+    background: var(--home-page-bg-color);
+    color: var(--text-color);
+    display: flex;
+}
+
+.home-page{
+    flex-direction: column;
+}
+
+.home-page{
+    gap:30px;
+}

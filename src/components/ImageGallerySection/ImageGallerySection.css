@@ -1,0 +1,262 @@
+.gallery-image-section,.image-user-profile-content-box,.user-name-div,.user-profile-name-parent-container,.user-likes-icon-container,.pop-up-left-side-buttons-div,.social-media-handle-row,.social-media-handle-div,.user-likes-icon-div{
+    display: flex;
+}
+
+.user-name-div,.user-profile-name-parent-container,.user-likes-icon-container,.pop-up-left-side-buttons-div,.social-media-handle-row,.social-media-handle-div,.user-likes-icon-div{
+    flex-direction: row;
+}
+
+.useranme,.social-media-username,.social-media-icons,.user-likes-icon-div p,.user-likes-icon{
+    color: var(--text-color);
+}
+
+
+.gallery-image-section{
+    flex-direction: column;
+}
+
+.gallery-image-section{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery{
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    margin-top: 20px;
+}
+
+.gallery-image-container{
+    /* display: flex;
+    flex-direction:row; */
+    columns:3 100px;
+    margin-left: 10px;
+    gap:40px;
+    width: 100%;
+}
+
+.gallery-images-boxes{
+    height: auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+
+
+.gallery-images{
+
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;  
+    width: 20rem;
+    height: auto;
+    /* object-fit:cover; */
+}
+
+.image-user-profile-content-box{
+
+    background: var(--user-profile-content-box-bg-color);
+    padding: 22px 17px 0px 12px;
+    height: 10vh;
+    width: 18.1rem;
+    margin-left: -1px;
+    margin-top: -30px;
+    border: 2px solid var(--user-profile-content-box-border-color);
+    justify-content: space-between;
+}
+
+
+.username{
+    font-size: .8rem;
+    margin-top: -15px;
+}
+.user-name-div{
+    gap:5px;
+}
+
+
+.user-profile-image{
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.user-likes-icon{
+    font-size: 1.1rem;
+    margin-top: 18px;
+}
+
+.user-likes-icon-container{
+    gap:4px;
+    margin-top: 10px;
+}
+
+
+
+
+/* Pop Up Box Styling */
+
+
+ .gallery-pop-up-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:74%;
+    left: 25%;
+    animation:popUpBoxAnimation 1s ease;
+
+}
+
+
+.pop-up-image-user-profile-content-box{
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 2px 22px 2px 22px;
+    margin-top: 24px;
+    height: 11%;
+    background-color: var(--user-profile-content-box-bg-color);
+    width: 48.5%;
+    position:fixed;
+    top:75.5%;
+    left: 25%;
+
+}
+
+.pop-up-gallery-images img{
+    position:relative;
+    top:-90%;
+    left: 0%;
+    width: 51.5%;
+    height:28rem;
+    /* background-color: red; */
+}
+
+.user-profile-name-parent-container{
+    gap:20px;
+    
+}
+
+
+
+
+.pop-up-left-side-buttons-div {
+    gap:2px;
+}
+
+.share-icon,.info-icon,.pop-up-left-side-buttons-div button{
+    color: white;
+}
+
+.share-icon,.info-icon{
+    font-size: 1.13rem;
+    position: relative;
+    left: 15%;
+    top:16%;
+}
+
+.pop-up-left-side-buttons-div button{
+    border: 1.5px solid white;
+    border-radius: 5px;
+    background: none;
+    height: 3vh;
+    padding: 7px 20px 23px 38px;
+}
+
+.pop-up-button-over-image-container{
+    display: flex;
+    flex-direction: row;
+    width: 49%;
+    /* background-color: red; */
+    justify-content: space-between;
+    position: fixed;
+    left: 25.6%;
+    top:72%;
+}
+
+.download-image-button{
+    font-family: "Montserrat";
+    border-radius: 4px;
+    font-size: .8rem;
+    margin-top: -20px;
+    padding: 12px 30px 13px 30px;
+    border: none;
+    background: #3cb46e;
+    color:white;
+}
+
+@keyframes popUpBoxAnimation {
+    0%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.bg-filter{
+    position: fixed;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 44, 44, 0.79);
+}
+.close-pop-up-box-icon,.close-pop-up-box-icon-div{
+    position: fixed;
+    top:18%;
+    left: 75%;
+    z-index: +1;
+}
+.close-pop-up-box-icon-div{
+    color: black;
+    background: whitesmoke;
+    border-radius: 200px;
+    width: 1.1rem;
+    height: 3.1vh;
+    padding: 2px 2px 0px 2px;
+    
+}
+
+.close-pop-up-box-icon{
+    font-size: 1.4rem;
+    color: gray;
+    z-index: +1;
+    cursor: pointer;
+   
+}
+
+.user-likes-icon-div{
+    gap:5px;
+    color: rgb(76, 76, 76);
+}
+
+.social-media-handle-row{
+    display: flex;
+    margin-left: -12px;
+    margin-top: 22px;
+    color: gray;
+    gap:22px;
+    font-size: .8rem;
+
+}
+.social-media-handle-row{
+    margin-left: 20px;
+
+}
+
+.social-media-icons{
+
+    color: gray;
+    margin: 6px 2px 2px -17px;
+}
+
+.social-media-username{
+    color: gray;
+    margin: 2px 2px 2px 4px;
+}
