@@ -159,7 +159,7 @@ margin-left: -120px;
     .pop-up-image-user-profile-content-box{
 
         top:50.8%;
-        height: 22%;
+        height:auto;
         left: 4%;
         width: 82%;
     }
